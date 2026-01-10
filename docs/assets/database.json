@@ -1,0 +1,41 @@
+{
+  "parametres": {
+    "seuil_pauvrete": 1193.00,
+    "rsa_socle_2026": 568.94,
+    "qf_alerte": 428,
+    "date_instruction": "10/01/2026"
+  },
+  "procedure_penale": [
+    {
+      "article": "Art. 41-1 CPP",
+      "titre": "Composition Pénale & Enquête",
+      "usage": "Demande de réparation immédiate des dommages-intérêts pour le million de victimes."
+    },
+    {
+      "article": "Art. 53 CPP",
+      "titre": "Crime ou Délit Flagrant",
+      "usage": "Constate la rétention actuelle des fonds de subsistance au 10/01/2026."
+    },
+    {
+      "article": "Art. 78-2 CPP",
+      "titre": "Vérification d'Identité",
+      "usage": "Identification formelle des auteurs des faits et mandataires à l'adresse du Faubourg Saint-Honoré."
+    }
+  ],
+  "articles_loi_penal": [
+    { "ref": "Art. 226 CP", "titre": "Atteinte au consentement", "desc": "Surveillance numérique/satellitaire." },
+    { "ref": "Art. 313 CP", "titre": "Escroquerie Financière", "desc": "Planche à billets et dépréciation de l'euro." },
+    { "ref": "Art. 344 CP", "titre": "Corruption & Blanchiment", "desc": "Boutique.elysee.fr et détournement TVA." },
+    { "ref": "Art. 460 CP", "titre": "Intoxication (Livre IV)", "desc": "Pesticides (Loi Duplomb), Mercosur et PAC." }
+  ],
+  "fondements_constitutionnels": {
+    "art_16_ddhc": "Nullité de la Constitution (Absence de séparation des pouvoirs via 49.3)",
+    "art_68_const": "Procédure de destitution pour manquement aux devoirs",
+    "art_440_cc": "Mise sous Tutelle de l'exécutif pour inaptitude"
+  },
+  "auteurs_identifies": {
+    "lieu_principal": "Palais de l'Élysée",
+    "adresse": "55 Rue du Faubourg Saint-Honoré, 75008 Paris",
+    "plateforme_litigieuse": "boutique.elysee.fr"
+  }
+}
