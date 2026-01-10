@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>JUSTICIA 2026 - Portail de la Souveraineté</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <style>
+        :root { --blue-france: #000091; --red-marianne: #e1000f; --white: #ffffff; }
+        body { font-family: "Marianne", Arial, sans-serif; margin: 0; background: #f6f6f6; }
+        
+        .fr-header { background: var(--white); border-bottom: 2px solid var(--blue-france); padding: 1.5rem; display: flex; align-items: center; justify-content: space-between; }
+        .fr-logo { border-left: 3px solid var(--blue-france); padding-left: 10px; font-weight: bold; text-transform: uppercase; }
+        
+        .nav-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; padding: 2rem; max-width: 1200px; margin: auto; }
+        .nav-card { background: white; padding: 20px; border: 1px solid #ddd; border-bottom: 4px solid var(--blue-france); text-decoration: none; color: black; transition: 0.3s; }
+        .nav-card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .nav-card h3 { color: var(--blue-france); margin-top: 0; }
+        
+        .counter-section { background: #000; color: #00ff00; text-align: center; padding: 2rem; font-family: monospace; }
+        .counter-num { font-size: 3.5rem; display: block; }
+    </style>
+</head>
+<body>
+
+<header class="fr-header">
+    <div class="fr-logo">République Française<br><small>Souveraineté Populaire</small></div>
+    <div style="text-align: right;"><strong>IA-LOCAL / JUSTICIA-2026</strong></div>
+</header>
+
+<div class="counter-section">
+    COMPTEUR DE COMPOSITION PÉNALE (ART. 41-1 CPP)
+    <span id="victim-count" class="counter-num">1 000 000</span>
+    CITOYENS EN ATTENTE DE RÉPARATION
+</div>
+
+<main class="nav-grid">
+    <a href="pv-audition.html" class="nav-card">
+        <h3>1. PROCÈS-VERBAL</h3>
+        <p>Générer et imprimer votre PV d'audition collective pour l'enquête parlementaire.</p>
+    </a>
+    <a href="constitution-pc.html" class="nav-card">
+        <h3>2. ACTION JURIDIQUE</h3>
+        <p>Modèles de courriers au Procureur et dépôt de plainte avec constitution de partie civile.</p>
+    </a>
+    <a href="tribunal-citoyen.html" class="nav-card" style="border-bottom-color: var(--red-marianne);">
+        <h3>3. TRIBUNAL CITOYEN</h3>
+        <p>Votez pour le jugement majoritaire : Destitution (Art. 68) ou Mise sous Tutelle (Art. 440 CC).</p>
+    </a>
+</main>
+
+<script>
+    let victims = 1000000;
+    setInterval(() => { victims += Math.floor(Math.random() * 7); document.getElementById('victim-count').innerText = victims.toLocaleString(); }, 3000);
+</script>
+</body>
+</html>
