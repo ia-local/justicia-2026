@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUSTICIA 2026 - Portail de la Souveraineté Populaire</title>
+    <link rel="stylesheet" href="./assets/css/gouv-style.css">
+    <style>
+        /* Styles spécifiques au Hub pour le routage visuel */
+        .grid-nav {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            background: white;
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-bottom: 4px solid var(--blue-france);
+        }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .card.action { border-bottom: 4px solid var(--red-marianne); }
+        .card h3 { margin-top: 0; color: var(--blue-france); text-transform: uppercase; font-size: 1.1rem; }
+        .card p { font-size: 0.9rem; color: #444; flex-grow: 1; }
+        .btn-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px;
+            background: var(--blue-france);
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+        .card.action .btn-link { background: var(--red-marianne); }
+        .status-bar {
+            background: #000;
+            color: #00ff00;
+            padding: 15px;
+            text-align: center;
+            font-family: monospace;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="fr-header">
+        <div class="fr-logo">République Française<br><small>Souveraineté des 90%</small></div>
+        <div style="text-align: right;">
+            <strong style="display: block;">JUSTICIA-2026.V1</strong>
+            <small>Instruction du <span data-justicia="parametres.date_constat">10/01/2026</span></small>
+        </div>
+    </header>
+
+    <div class="status-bar">
+        ALERTE NATIONALE : <span id="victim-count">1 000 000</span> CITOYENS EN PROCÉDURE DE COMPOSITION PÉNALE
+    </div>
+
+    <main class="container">
+        <section style="text-align: center; margin-bottom: 40px;">
+            <h2 style="text-transform: uppercase;">Manifeste contre la Défaillance Républicaine</h2>
+            <p>Conformément à l'<strong>Article 16 de la DDHC</strong>, nous constatons la nullité de la Constitution par l'usage abusif du 49.3. 
+            Ce portail permet l'identification des auteurs (Art. 78 CPP) et la réparation des préjudices (Art. 41-1 CPP).</p>
+        </section>
+
+        <div class="grid-nav">
+            <div class="card">
+                <h3>I. Dossier des Preuves</h3>
+                <p>Analyse de l'intoxication sanitaire (Pesticides, Accords de Paris), de l'escroquerie monétaire et de la surveillance numérique.</p>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 5px;">
+                    <a href="./preuves/pesticides.html" class="btn-link">Pesticides</a>
+                    <a href="./preuves/inflation-euro.html" class="btn-link">Inflation</a>
+                    <a href="./preuves/surveillance.html" class="btn-link">Surveillance</a>
+                    <a href="./preuves/budget-2026.html" class="btn-link">Budget</a>
+                </div>
+            </div>
+
+            <div class="card action">
+                <h3>II. Action Judiciaire</h3>
+                <p>Générez vos documents légaux pour le Procureur de la République et déposez plainte avec constitution de partie civile.</p>
+                <a href="./justice/pv-audition.html" class="btn-link">Générer mon PV (A4)</a>
+                <a href="./justice/constitution-pc.html" class="btn-link">Constitution Partie Civile</a>
+                <a href="./justice/plainte-en-ligne.html" class="btn-link">Dépôt en ligne (Aide)</a>
+            </div>
+
+            <div class="card">
+                <h3>III. Tribunal Souverain</h3>
+                <p>Instance électorale pour le jugement majoritaire : Votez la mise sous tutelle (Art. 440 CC) et la destitution (Art. 68 Const).</p>
+                <a href="./tribunal/vote-majeur.html" class="btn-link">Voter le Jugement</a>
+                <a href="./tribunal/verdict-citoyen.html" class="btn-link">Voir le Verdict en direct</a>
+            </div>
+        </div>
+    </main>
+
+    <footer style="text-align: center; margin-top: 50px; padding: 20px; font-size: 0.8rem; color: #666; border-top: 1px solid #ddd;">
+        JUSTICIA-2026 | Infrastructure de Droit Citoyen | 55 Rue du Faubourg Saint-Honoré (Cible d'Assignation)
+    </footer>
+
+    <script src="./assets/js/justicia-core.js"></script>
+</body>
+</html>

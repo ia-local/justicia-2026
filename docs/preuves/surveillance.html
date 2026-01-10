@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dossier Surveillance de Masse - JUSTICIA 2026</title>
+    <link rel="stylesheet" href="../assets/css/gouv-style.css">
+    <style>
+        .network-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .sensor-card {
+            background: #fdfdfd;
+            border: 1px solid var(--grey-border);
+            padding: 1.5rem;
+            border-top: 4px solid var(--blue-france);
+        }
+        .signal-alert {
+            background: var(--black);
+            color: var(--green-matrix);
+            padding: 1rem;
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+            border-radius: 4px;
+            margin-bottom: 2rem;
+        }
+        @media (min-width: 768px) {
+            .network-grid { grid-template-columns: 1fr 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="fr-header">
+        <div class="fr-logo">RÉPUBLIQUE FRANÇAISE<br><small>Souveraineté des 90%</small></div>
+        <nav class="fr-nav">
+            <ul>
+                <li><a href="../index.html">SITUATION</a></li>
+                <li><a href="./pesticides.html">SANTÉ</a></li>
+                <li><a href="./inflation-euro.html">FINANCE</a></li>
+                <li><a href="./surveillance.html" style="color: var(--red-marianne);">SURVEILLANCE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="status-bar">
+        ALERTE RÉSEAU : CAPTATION DE DONNÉES SANS CONSENTEMENT (ART. 226 CP)
+    </div>
+
+    <main class="container">
+        
+        <article id="instruction-surveillance">
+            <header class="hero-section">
+                <h1>I. Atteinte au Consentement (Art. 226 CP)</h1>
+                <p class="lead">Dossier sur la surveillance satellitaire et numérique généralisée des citoyens français au <span data-justicia="parametres.date_constat"></span>.</p>
+            </header>
+
+            <div class="signal-alert">
+                > SCAN SYSTÈME : IDENTIFIANTS UNIQUES DÉTECTÉS<br>
+                > STATUT : CAPTATION ACTIVE SANS OPT-OUT RÉEL<br>
+                > VIOLATION : ART. 226-1 DU CODE PÉNAL
+            </div>
+
+            <section>
+                <h2>1. Qualification du Délit</h2>
+                <div class="law-card">
+                    <strong data-justicia="articles_loi_penal.0.ref">Art. 226-1 CP</strong>
+                    <p data-justicia="articles_loi_penal.0.desc"></p>
+                    <p><em>"Est puni d'un an d'emprisonnement et de 45 000 euros d'amende le fait de porter atteinte à l'intimité de la vie privée d'autrui..."</em></p>
+                </div>
+            </section>
+
+            <section>
+                <h2>2. Vecteurs d'Intrusion Documentés</h2>
+                <p>L'enquête parlementaire identifie trois vecteurs majeurs de captation frauduleuse utilisés contre les 90% :</p>
+                
+                <div class="network-grid">
+                    <div class="sensor-card">
+                        <h3>Captation Satellitaire</h3>
+                        <p>Imagerie basse altitude et suivi des déplacements en zone rurale sans mandat judiciaire préalable.</p>
+                    </div>
+                    <div class="sensor-card">
+                        <h3>Métadonnées Mobiles</h3>
+                        <p>Aspiration des flux de communication via les infrastructures 5G souveraines détournées à des fins de profilage.</p>
+                    </div>
+                    <div class="sensor-card">
+                        <h3>Biométrie Invisible</h3>
+                        <p>Déploiement de capteurs comportementaux dans les espaces publics sous couvert de "sécurité bioclimatique".</p>
+                    </div>
+                    <div class="sensor-card">
+                        <h3>Hardware Backdoors</h3>
+                        <p>Intégration de puces de traçage non désactivables sur les terminaux distribués aux citoyens précaires.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>3. Absence de Consentement (Art. 16 DDHC)</h2>
+                <p>La garantie des droits n'est plus assurée lorsque le citoyen perd la propriété de son image, de ses mouvements et de ses données. L'absence d'un bouton de retrait effectif (Opt-out) transforme l'outil numérique en un instrument de contrainte pénale.</p>
+            </section>
+
+            <section class="no-print" style="text-align: center; margin-top: 3rem;">
+                <p><strong>Ajoutez ce préjudice à votre demande de réparation collective.</strong></p>
+                <a href="../justice/pv-audition.html" class="btn-action red">Intégrer la surveillance à mon PV</a>
+            </section>
+        </article>
+
+    </main>
+
+    <footer class="fr-footer">
+        <div class="container">
+            <p><strong>JUSTICIA 2026</strong> | Dossier n°3 : Surveillance & Libertés</p>
+            <p>Infrastructure d'adressage : 55 Rue du Faubourg Saint-Honoré (Art. 78 CPP)</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/justicia-core.js"></script>
+</body>
+</html>

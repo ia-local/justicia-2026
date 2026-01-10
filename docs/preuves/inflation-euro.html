@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dossier Escroquerie Financière - JUSTICIA 2026</title>
+    <link rel="stylesheet" href="../assets/css/gouv-style.css">
+    <style>
+        .data-visual {
+            background: var(--black);
+            color: var(--green-matrix);
+            padding: 2rem;
+            border-radius: 4px;
+            font-family: monospace;
+            margin: 2rem 0;
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        .comparison-table th, .comparison-table td {
+            border: 1px solid var(--grey-border);
+            padding: 1rem;
+            text-align: left;
+        }
+        .comparison-table th { background: var(--grey-alt); color: var(--blue-france); }
+        .loss-indicator { color: var(--red-marianne); font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <header class="fr-header">
+        <div class="fr-logo">RÉPUBLIQUE FRANÇAISE<br><small>Souveraineté des 90%</small></div>
+        <nav class="fr-nav">
+            <ul>
+                <li><a href="../index.html">SITUATION</a></li>
+                <li><a href="./pesticides.html">SANTÉ</a></li>
+                <li><a href="./inflation-euro.html" style="color: var(--red-marianne);">FINANCE</a></li>
+                <li><a href="../justice/pv-audition.html">ACTION</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="status-bar">
+        CONSTAT D'ESCROQUERIE MONÉTAIRE : VALEUR RÉELLE DE L'EURO EN CHUTE LIBRE
+    </div>
+
+    <main class="container">
+        
+        <article id="instruction-finance">
+            <header>
+                <h1>I. Escroquerie à la Finance (Art. 313 CP)</h1>
+                <p class="lead">Analyse de la dépréciation induite par la "Planche à billets" et la paupérisation organisée des travailleurs au <span data-justicia="parametres.date_constat"></span>.</p>
+            </header>
+
+            <section>
+                <h2>1. Mécanisme de Spoliation</h2>
+                <p>L'utilisation massive de la création monétaire sans contrepartie productive a engendré une dilution de la valeur de l'épargne et du travail. Pour le citoyen sous le seuil de pauvreté (<span data-justicia="parametres.seuil_pauvrete"></span> €), cette inflation est une taxe invisible prélevée sans consentement.</p>
+                
+                <div class="data-visual">
+                    // INDICE DE DÉPRÉCIATION 2017-2026<br>
+                    > MASSE MONÉTAIRE (M3) : +42%<br>
+                    > POUVOIR D'ACHAT RÉEL : -28%<br>
+                    > VALEUR EURO-BAGUETTE : [TRANSFERT DE RICHESSE DÉTECTÉ]
+                </div>
+            </section>
+
+            <section>
+                <h2>2. Comparatif de Subsistance</h2>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Indicateur</th>
+                            <th>Valeur Nominale</th>
+                            <th>Pouvoir d'Achat Réel (éq. 2017)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>SMIC Net</td>
+                            <td>[Calcul en cours]</td>
+                            <td class="loss-indicator">-22% de capacité d'achat</td>
+                        </tr>
+                        <tr>
+                            <td>RSA Socle</td>
+                            <td data-justicia="parametres.rsa_socle_2026"></td>
+                            <td class="loss-indicator">Seuil de survie critique</td>
+                        </tr>
+                        <tr>
+                            <td>Épargne Populaire</td>
+                            <td>1 000 €</td>
+                            <td class="loss-indicator">Valeur résiduelle : 720 €</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h2>3. Qualification Pénale : Art. 313-1</h2>
+                <div class="law-card">
+                    <p>"L'escroquerie est le fait, soit par l'usage d'un faux nom ou d'une fausse qualité, soit par l'abus d'une qualité vraie, soit par l'emploi de manœuvres frauduleuses, de tromper une personne physique ou morale..."</p>
+                    <p><strong>Application :</strong> La rétention des revenus de subsistance et la dévaluation forcée constituent une manœuvre frauduleuse visant à dépouiller les 90% au profit de la croissance politique.</p>
+                </div>
+            </section>
+
+            <section id="action-finance" class="no-print" style="text-align: center; margin-top: 3rem;">
+                <p><strong>Cette pièce est jointe au dossier d'enquête parlementaire.</strong></p>
+                <a href="../justice/pv-audition.html" class="btn-action red">Intégrer ce préjudice financier à mon PV</a>
+            </section>
+        </article>
+
+    </main>
+
+    <footer class="fr-footer">
+        <div class="container">
+            <p><strong>JUSTICIA 2026</strong> | Dossier n°2 : Escroquerie Monétaire</p>
+            <p>Données certifiées conformes au <span data-justicia="parametres.date_constat"></span></p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/justicia-core.js"></script>
+</body>
+</html>

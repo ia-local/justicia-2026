@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dossier Corruption & Flux - JUSTICIA 2026</title>
+    <link rel="stylesheet" href="../assets/css/gouv-style.css">
+    <style>
+        .budget-flow {
+            border: 2px solid var(--blue-france);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            background: #fff;
+        }
+        .flow-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px dashed var(--grey-border);
+        }
+        .flow-item.negative { color: var(--red-marianne); font-weight: bold; }
+        .target-box {
+            background: var(--grey-alt);
+            padding: 1rem;
+            border-left: 5px solid var(--black);
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="fr-header">
+        <div class="fr-logo">RÉPUBLIQUE FRANÇAISE<br><small>Souveraineté des 90%</small></div>
+        <nav class="fr-nav">
+            <ul>
+                <li><a href="../index.html">SITUATION</a></li>
+                <li><a href="./inflation-euro.html">FINANCE</a></li>
+                <li><a href="./budget-2026.html" style="color: var(--red-marianne);">BUDGET</a></li>
+                <li><a href="../justice/pv-audition.html">ACTION</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="status-bar">
+        AUDIT BUDGÉTAIRE : RÉTENTION DE FLUX ET CORRUPTION (ART. 344 CP)
+    </div>
+
+    <main class="container">
+        
+        <article id="instruction-budget">
+            <header>
+                <h1>I. Corruption & Blanchiment (Art. 344 CP)</h1>
+                <p class="lead">Examen de la gestion des fonds publics et de la plateforme boutique.elysee.fr au <span data-justicia="parametres.date_constat"></span>.</p>
+            </header>
+
+            <section>
+                <h2>1. Analyse du Seuil de Survie</h2>
+                <p>Le budget de l'État pour 2026 ignore sciemment le <strong>seuil de pauvreté</strong> établi à <span data-justicia="parametres.seuil_pauvrete"></span> €. Le maintien du RSA à <span data-justicia="parametres.rsa_socle_2026"></span> € constitue une mise en danger délibérée d'autrui par privation de ressources.</p>
+                
+                <div class="budget-flow">
+                    <h3>Flux de Rétention Identifiés</h3>
+                    <div class="flow-item"><span>Recettes TVA (Consommation Populaire)</span> <span>+100%</span></div>
+                    <div class="flow-item"><span>Redistribution Sociale Réelle</span> <span class="negative">-35% (Valeur Euro)</span></div>
+                    <div class="flow-item"><span>Frais de Communication / Boutique</span> <span class="negative">Détournement suspect</span></div>
+                </div>
+            </section>
+
+            <section>
+                <h2>2. La Boutique de l'Élysée : Symbole du Délit</h2>
+                <div class="target-box">
+                    <strong>CIBLE :</strong> <span data-justicia="auteurs_identifies.plateforme_litigieuse"></span><br>
+                    <strong>MOTIF :</strong> Utilisation des symboles de la République à des fins de mercantilisme privé alors que la Nation est en état de nécessité.
+                </div>
+                <p>L'Art. 344 du Code Pénal qualifie ces manœuvres comme une tentative de légitimer des revenus issus de la spoliation des contribuables.</p>
+            </section>
+
+            <section>
+                <h2>3. Qualification : Rétention Indue</h2>
+                <div class="law-card">
+                    <strong>Art. 313 CP & 344 CP</strong>
+                    <p>La captation de la valeur ajoutée (TVA) sur des citoyens incapables de subvenir à leurs besoins vitaux, pour financer des structures de prestige, est un élément constitutif de l'escroquerie aggravée.</p>
+                </div>
+            </section>
+
+            <section class="no-print" style="text-align: center; margin-top: 3rem;">
+                <p><strong>Joindre ce volet budgétaire à votre procédure.</strong></p>
+                <a href="../justice/pv-audition.html" class="btn-action red">Intégrer le préjudice budgétaire au PV</a>
+            </section>
+        </article>
+
+    </main>
+
+    <footer class="fr-footer">
+        <div class="container">
+            <p><strong>JUSTICIA 2026</strong> | Dossier n°4 : Budget & Corruption</p>
+            <p>Données issues du KERNEL CORE_SYSTEM_CVNU.js</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/justicia-core.js"></script>
+</body>
+</html>

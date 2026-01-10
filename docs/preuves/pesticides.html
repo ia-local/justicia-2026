@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dossier Intoxication Sanitaire & Vétérinaire - JUSTICIA 2026</title>
+    <link rel="stylesheet" href="../assets/css/gouv-style.css">
+    <style>
+        .bio-hazard {
+            border: 2px solid var(--red-marianne);
+            background: #fffafa;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+        .tox-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+        .tox-item {
+            padding: 1rem;
+            border-left: 4px solid var(--red-marianne);
+            background: #f4f4f4;
+            font-size: 0.95rem;
+        }
+        .warning-box {
+            background: var(--black);
+            color: var(--white);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-left: 10px solid var(--red-marianne);
+        }
+        .impact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        @media (min-width: 768px) {
+            .impact-grid { grid-template-columns: 1fr 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="fr-header">
+        <div class="fr-logo">RÉPUBLIQUE FRANÇAISE<br><small>Souveraineté des 90%</small></div>
+        <nav class="fr-nav">
+            <ul>
+                <li><a href="../index.html">SITUATION</a></li>
+                <li><a href="./pesticides.html" style="color: var(--red-marianne);">INTOXICATION</a></li>
+                <li><a href="./accord-de-paris.html">BIOCLIMATIQUE</a></li>
+                <li><a href="../justice/pv-audition.html">ACTION PÉNALE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="status-bar" style="background: var(--red-marianne);">
+        URGENCE SANITAIRE : CRIME D'INTOXICATION ET GÉNOCIDE DU CHEPTEL (ART. 460 CP)
+    </div>
+
+    <main class="container">
+        
+        <article id="instruction-pesticides">
+            <header>
+                <h1>I. Intoxication Systémique & Santé Animale</h1>
+                <p class="lead">Dossier sur l'usage des pesticides (Loi Duplomb), les accords Mercosur et le massacre vaccinal du cheptel bovin au <span data-justicia="parametres.date_constat"></span>.</p>
+            </header>
+
+            <section class="bio-hazard">
+                <h2>1. Le Crime d'Intoxication (Art. 460 CP)</h2>
+                <p>L'enquête démontre une altération délibérée de la santé publique par le maintien de molécules neurotoxiques et l'importation de poisons alimentaires.</p>
+                
+                <div class="tox-list">
+                    <div class="tox-item">
+                        <strong>Loi Duplomb & PAC :</strong> Maintien forcé des intrants chimiques (glyphosate, néonicotinoïdes) malgré les rapports de toxicité, détruisant la microbiologie des sols et la santé des agriculteurs.
+                    </div>
+                    <div class="tox-item">
+                        <strong>Accords Mercosur :</strong> Trahison de la souveraineté alimentaire par l'importation de viandes et céréales traitées avec des substances interdites sur le sol français.
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>2. Volet Vétérinaire : Le Massacre du Cheptel</h2>
+                <p>Sous couvert de lutte contre la <strong>dermatose nodulaire contagieuse</strong>, l'exécutif impose des campagnes de vaccination expérimentale aux conséquences dévastatrices.</p>
+                
+                <div class="impact-grid">
+                    <div class="tox-item" style="border-left-color: var(--blue-france);">
+                        <h3>Dermatose Nodulaire</h3>
+                        <p>Instrumentalisation des crises sanitaires pour forcer l'injection de produits sans recul biologique, provoquant des hécatombes dans les élevages bovins.</p>
+                    </div>
+                    <div class="tox-item" style="border-left-color: var(--blue-france);">
+                        <h3>Massacre des Vaccinés</h3>
+                        <p>Constat de surmortalité et de morbidité accrue chez les animaux vaccinés. Destruction programmée de l'élevage paysan au profit de l'agro-industrie mondiale.</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="warning-box">
+                <h3>CONSTAT DE CARENCE PÉNALE</h3>
+                <p>Le non-respect du principe de précaution et l'empoisonnement de la chaîne trophique constituent des éléments matériels du crime d'intoxication (Art. 460 al. 3). La faune, la flore et le bétail sont sacrifiés sur l'autel de la croissance politique.</p>
+            </div>
+
+            <section class="no-print" style="text-align: center; margin-top: 3rem;">
+                <p><strong>Intégrez ces faits à votre demande de réparation immédiate.</strong></p>
+                <a href="../justice/pv-audition.html" class="btn-action red">Générer mon PV (Volet Sanitaire)</a>
+            </section>
+        </article>
+
+    </main>
+
+    <footer class="fr-footer">
+        <div class="container">
+            <p><strong>JUSTICIA 2026</strong> | Dossier n°1 : Santé & Vétérinaire</p>
+            <p>Données certifiées conformes au <span data-justicia="parametres.date_constat"></span></p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/justicia-core.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+/* JUSTICIA 2026 - ARCHITECTURE VISUELLE CONSOLIDÉE */
+:root {
+    --blue-france: #000091;
+    --red-marianne: #e1000f;
+    --white: #ffffff;
+    --black: #161616;
+    --grey-alt: #f6f6f6;
+    --grey-border: #e5e5e5;
+    --green-matrix: #00ff00;
+}
+
+/* Base Sémantique */
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html { font-size: 16px; scroll-behavior: smooth; }
+body { 
+    margin: 0; padding: 0; 
+    font-family: 'Marianne', Arial, sans-serif; 
+    background-color: var(--white); color: var(--black); 
+    line-height: 1.5; overflow-x: hidden;
+}
+
+/* Header & Navigation Mobile-First */
+.fr-header {
+    padding: 1rem; border-bottom: 2px solid var(--blue-france);
+    background: var(--white); position: sticky; top: 0; z-index: 1000;
+    display: flex; flex-direction: column; align-items: center; gap: 1rem;
+}
+
+.fr-logo {
+    text-transform: uppercase; font-weight: 900; line-height: 1.1;
+    border-left: 4px solid var(--blue-france); padding-left: 0.75rem; font-size: 0.9rem;
+}
+
+.fr-nav { width: 100%; border-top: 1px solid var(--grey-border); padding-top: 0.5rem; }
+.fr-nav ul { 
+    list-style: none; margin: 0; padding: 0; 
+    display: flex; justify-content: space-around; flex-wrap: wrap; gap: 0.5rem;
+}
+.fr-nav a {
+    text-decoration: none; color: var(--black); font-weight: 700;
+    font-size: 0.75rem; text-transform: uppercase; padding: 0.5rem;
+}
+
+/* Status Bar */
+.status-bar {
+    background: var(--black); color: var(--green-matrix);
+    padding: 0.5rem; text-align: center; font-family: monospace;
+    font-size: 0.9rem; font-weight: bold; letter-spacing: 1px;
+}
+
+/* Layout Mobile-First */
+.container { width: 100%; max-width: 1000px; margin: 0 auto; padding: 1.5rem; }
+
+section { padding: 2rem 0; border-bottom: 1px solid var(--grey-border); }
+
+/* Typography */
+h1 { font-size: 1.75rem; color: var(--black); margin-bottom: 1rem; }
+h2 { font-size: 1.4rem; color: var(--blue-france); border-bottom: 3px solid var(--red-marianne); display: inline-block; padding-bottom: 4px; }
+
+/* Components */
+.card {
+    background: var(--grey-alt); border: 1px solid var(--grey-border);
+    padding: 1.5rem; margin-bottom: 1.5rem; transition: 0.2s;
+}
+
+.law-card {
+    background: #f9f9f9; padding: 1.5rem; border-left: 8px solid var(--blue-france);
+    margin: 1.5rem 0; font-family: 'Courier New', monospace; font-size: 0.9rem;
+}
+
+.btn-action {
+    display: block; width: 100%; background: var(--blue-france); color: var(--white) !important;
+    text-decoration: none; padding: 1rem; font-weight: bold; text-align: center; border: none;
+}
+
+.btn-action.red { background: var(--red-marianne); }
+
+/* Desktop Overrides */
+@media (min-width: 768px) {
+    .fr-header { flex-direction: row; justify-content: space-between; padding: 1rem 2rem; }
+    .fr-nav { width: auto; border: none; padding: 0; }
+    .fr-nav ul { gap: 1.5rem; }
+    .fr-nav a { font-size: 0.9rem; }
+    h1 { font-size: 2.5rem; }
+    .btn-action { display: inline-block; width: auto; }
+    .grid-nav { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+}
+
+/* Print */
+@media print {
+    .no-print { display: none !important; }
+    .container { width: 100% !important; margin: 0 !important; }
+    .pv-box { border: 2px solid black !important; padding: 2cm !important; }
+}
