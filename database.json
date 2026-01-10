@@ -1,0 +1,59 @@
+{
+  "manifesto_metadata": {
+    "id": "JUSTICIA-2026-001",
+    "timestamp": "2026-01-10T09:30:00Z",
+    "author_role": "Data Architect & Victim Representative",
+    "legal_context": "Dénonciation de défaillance républicaine et escroquerie financière"
+  },
+  "sections": [
+    {
+      "semantic_tag": "header",
+      "title": "Identification de la Victime et Droits de Subsistance",
+      "content": {
+        "subject": "MICKAEL CAUCHON",
+        "tutelle": "UDAF DU CALVADOS",
+        "prestations_period": "Janvier 2025 - Décembre 2025",
+        "verified_rights": [
+          { "type": "RSA", "value": 568.94, "currency": "EUR", "status": "Bloqué/Retenu" },
+          { "type": "APL", "value": 286.00, "currency": "EUR", "target": "Bailleur (JOTC)" }
+        ]
+      }
+    },
+    {
+      "semantic_tag": "article",
+      "id": "penal-313",
+      "title": "Qualification Pénale : Escroquerie (Art. 313-1 CP)",
+      "evidence_base": {
+        "fact": "Décalage systémique entre l'inflation et le Quotient Familial stagnant.",
+        "data_points": {
+          "QF_start_2025": 421,
+          "QF_end_2025": 428
+        },
+        "violation": "Rétention indue de trésorerie par l'organisme de tutelle malgré des droits Caf certifiés au 10/01/2026."
+      }
+    },
+    {
+      "semantic_tag": "article",
+      "id": "politique-49-3",
+      "title": "Abus de Pouvoir : Le 49.3 de la Finance",
+      "content": {
+        "mechanism": "Planche à billets (BCE) vs Censure budgétaire sociale.",
+        "analysis": "Utilisation de l'article 49.3 pour imposer des budgets favorisant l'évasion fiscale au détriment du seuil de pauvreté (1193€).",
+        "impact": "100% des habitants contaminés (pesticides) et 90% des paysans en révolte."
+      }
+    },
+    {
+      "semantic_tag": "footer",
+      "title": "Revendications et Enquête Parlementaire (Art. 41 CPP)",
+      "actions": [
+        "Audit immédiat des flux TVA captés par les grandes enseignes (Leclerc, Amazon).",
+        "Rétablissement de la valeur réelle de l'euro (prix de la baguette).",
+        "Levée immédiate des blocages de virements de subsistance par l'UDAF."
+      ]
+    }
+  ],
+  "ai_logic": {
+    "warp_ascii_config": "render_mode: glyph_financial_collapse, color_scheme: alert_red",
+    "dynamic_prompt": "=AI(\"ROLE:system,CONTENT:Générer une narration sémantique pour Justicia.html basée sur ces 4 sections\")"
+  }
+}
