@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de PV d'Audition - JUSTICIA 2026</title>
+    <link rel="stylesheet" href="../assets/css/gouv-style.css">
+    <style>
+        /* Style spécifique pour le rendu "Document Officiel" */
+        .pv-document {
+            background: white;
+            color: black;
+            border: 2px solid #000;
+            padding: 2.5cm 1.5cm;
+            font-family: "Times New Roman", serif;
+            line-height: 1.2;
+            min-height: 29.7cm; /* Format A4 */
+            position: relative;
+        }
+        .pv-header {
+            text-align: center;
+            border-bottom: 1px solid #000;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+        }
+        .pv-section { margin-bottom: 1.5rem; text-align: justify; }
+        .pv-title { font-weight: bold; text-decoration: underline; text-transform: uppercase; }
+        .signature-zone { margin-top: 4rem; display: flex; justify-content: space-between; }
+        .official-seal {
+            border: 2px solid #000;
+            width: 150px; height: 150px;
+            display: flex; align-items: center; text-align: center;
+            font-size: 0.7rem; border-radius: 50%; padding: 10px;
+        }
+        
+        @media print {
+            .no-print { display: none !important; }
+            body { background: white; margin: 0; padding: 0; }
+            .container { max-width: none; padding: 0; }
+            .pv-document { border: none; padding: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="fr-header no-print">
+        <div class="fr-logo">RÉPUBLIQUE FRANÇAISE<br><small>Souveraineté des 90%</small></div>
+        <nav class="fr-nav">
+            <ul>
+                <li><a href="../index.html">RETOUR HUB</a></li>
+                <li><button onclick="window.print()" class="btn-action red" style="padding: 0.5rem 1rem;">IMPRIMER LE PV (A4)</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <div class="pv-document" id="pv-content">
+            <div class="pv-header">
+                <strong>RÉPUBLIQUE FRANÇAISE</strong><br>
+                <span>MINISTÈRE DE LA JUSTICE SOUVERAINE</span><br><br>
+                <h1 style="font-size: 1.5rem; color: black; border: none;">PROCES-VERBAL D'AUDITION ET DE PLAINTE COLLECTIVE</h1>
+                <small>CADRE JURIDIQUE : ART. 41-1, 53 ET 78-2 DU CODE DE PROCÉDURE PÉNALE</small>
+            </div>
+
+            <div class="pv-section">
+                <p>L'an deux mille vingt-six, le <span data-justicia="parametres.date_instruction"></span>,</p>
+                <p>Agissant en vertu de l'<strong>Article 53 du CPP</strong> relatif au délit flagrant de spoliation monétaire et d'intoxication sanitaire,</p>
+                <p>Nous, Citoyens Souverains, portons à la connaissance de Monsieur le Procureur de la République les faits suivants relevés à l'encontre des mandataires résidant au <span data-justicia="auteurs_identifies.adresse"></span>.</p>
+            </div>
+
+            <div class="pv-section">
+                <p class="pv-title">I. FAITS D'INTOXICATION (ART. 460 CP)</p>
+                <p>Il est constaté l'usage intensif de pesticides (Loi Duplomb), la trahison des Accords de Paris par expérimentations bioclimatiques et le massacre vaccinal du cheptel bovin (Dermatose nodulaire).</p>
+            </div>
+
+            <div class="pv-section">
+                <p class="pv-title">II. FAITS D'ESCROQUERIE FINANCIÈRE (ART. 313 CP)</p>
+                <p>Le constat de dépréciation de l'euro par planche à billets et la rétention indue des flux de subsistance (TVA/RSA) constituent une manœuvre frauduleuse caractérisée.</p>
+            </div>
+
+            <div class="pv-section">
+                <p class="pv-title">III. FAITS D'ATTEINTE AU CONSENTEMENT (ART. 226 CP)</p>
+                <p>La surveillance satellitaire et numérique de masse, opérée sans mandat judiciaire ni option de retrait, viole l'intimité de la vie privée des plaignants.</p>
+            </div>
+
+            <div class="pv-section">
+                <p class="pv-title">IV. RÉQUISITIONS (ART. 41-1 & 78-2 CPP)</p>
+                <p>En application de la <strong>Composition Pénale</strong>, nous requérons l'identification immédiate des auteurs des faits et la mise en œuvre de mesures de réparation pour le million de victimes recensées. À défaut de réponse sous délai légal, la mise sous tutelle (Art. 440 CC) sera actée par verdict souverain.</p>
+            </div>
+
+            <div class="signature-zone">
+                <div>
+                    <p>Fait pour valoir ce que de droit,</p>
+                    <p>Le Plaignant (Signature) :</p>
+                    <div style="border: 1px solid #ccc; width: 250px; height: 80px; margin-top: 10px;"></div>
+                </div>
+                <div class="official-seal">
+                    SCEAU DE LA<br>SOUVERAINETÉ<br>JUSTICIA 2026
+                </div>
+            </div>
+        </div>
+
+        <section class="no-print" style="margin-top: 2rem; padding: 1.5rem; background: var(--grey-alt); border: 1px solid var(--blue-france);">
+            <h3>INSTRUCTIONS DE DÉPÔT</h3>
+            <ol>
+                <li>Imprimez ce document en deux exemplaires.</li>
+                <li>Signez la zone de signature ci-dessus.</li>
+                <li>Déposez-le au greffe du Tribunal Judiciaire le plus proche ou envoyez-le en LRAR au <strong>55 Rue du Faubourg Saint-Honoré, 75008 Paris</strong>.</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer class="fr-footer no-print">
+        <div class="container">
+            <p><strong>JUSTICIA 2026</strong> | Document de Procédure Généré le <span data-justicia="parametres.date_instruction"></span></p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/justicia-core.js"></script>
+</body>
+</html>

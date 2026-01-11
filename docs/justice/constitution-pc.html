@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONSTITUTION DE PARTIE CIVILE - JUSTICIA 2026</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/gouv-style.css">
+    <style>
+        @media print { .no-print { display: none; } body { background: white; padding: 0; } .container { border: none; box-shadow: none; width: 100%; } }
+        :root { --blue-france: #000091; --red-marianne: #e1000f; }
+        body { font-family: "Marianne", Arial, sans-serif; background: #f4f4f4; padding: 20px; }
+        .container { max-width: 850px; margin: auto; background: white; border: 2px solid #000; padding: 40px; box-shadow: 0 0 15px rgba(0,0,0,0.1); }
+        .header-print { border-bottom: 3px solid var(--blue-france); display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+        .marianne { font-weight: bold; text-transform: uppercase; border-left: 4px solid var(--blue-france); padding-left: 10px; font-size: 14px; }
+        .titre-acte { color: var(--red-marianne); text-align: right; text-transform: uppercase; font-weight: 900; font-size: 18px; }
+        .content-box { font-family: "Courier New", monospace; font-size: 12px; border: 1px solid #ccc; padding: 20px; background: #fafafa; white-space: pre-wrap; margin: 20px 0; }
+        .instruction-step { background: var(--blue-france); color: white; padding: 10px; font-weight: bold; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <div class="no-print" style="position: fixed; top: 0; left: 0; width: 100%; background: var(--black); color: white; padding: 15px; text-align: center; z-index: 9999;">
+        <strong>ACTION CIVILE (ART. 2 DU CPP)</strong> — Demande de réparation et dommages-intérêts.
+        <button onclick="window.print()" style="padding: 8px 20px; cursor: pointer; background: var(--red-marianne); color: white; border: none; font-weight: bold; margin-left: 20px;">🖨️ IMPRIMER L'ACTE DE SAISINE</button>
+    </div>
+
+    <div class="container" style="margin-top: 60px;">
+        <div class="header-print">
+            <div class="marianne">République<br>Française</div>
+            <div class="titre-acte">Lettre de Constitution<br>de Partie Civile</div>
+        </div>
+
+        <p style="font-size: 12px;"><strong>À l'attention de Monsieur le Doyen des Juges d'Instruction</strong><br>Tribunal Judiciaire compétent.</p>
+
+        <div class="instruction-step">OBJET : PLAINTE AVEC CONSTITUTION DE PARTIE CIVILE</div>
+
+        <div class="content-box">
+Je soussigné(e), ..........................................................., 
+Demeurant au : ..............................................................
+
+Déclare par la présente me constituer **PARTIE CIVILE** dans le cadre des poursuites engagées contre les mandataires du Faubourg Saint-Honoré pour les chefs d'accusation suivants :
+
+1. **ESCROQUERIE AGGRAVÉE (Art. 313-1 CP) :** Préjudice financier direct lié à la dépréciation monétaire forcée au 10/01/2026.
+2. **EMPOISONNEMENT ET INTOXICATION (Art. 460 CP) :** Exposition non consentie aux pesticides et expérimentations bioclimatiques.
+3. **ATTEINTE À LA VIE PRIVÉE (Art. 226 CP) :** Surveillance satellitaire continue.
+
+En application de l'**Article 2 du Code de Procédure Pénale**, je demande réparation du préjudice personnel, direct et certain subi du fait de ces infractions. 
+
+Je sollicite la nomination d'un juge d'instruction pour faire la lumière sur la rétention des fonds de subsistance (TVA/RSA) et l'usage des biens publics à des fins privées (boutique.elysee.fr).
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-top: 30px;">
+            <div style="font-size: 11px;">
+                <strong>PIÈCES JOINTES :</strong><br>
+                - Copie du PV d'Audition Collective n°2026-J<br>
+                - Preuves de précarité (Seuil < 1193€)<br>
+                - Relevé des indices de pollution atmosphérique
+            </div>
+            <div style="text-align: center;">
+                <p style="font-size: 12px;">Fait à ........................, le .................</p>
+                <p style="font-size: 12px; font-weight: bold;">Signature :</p>
+                <div style="border: 1px solid #000; width: 200px; height: 60px;"></div>
+            </div>
+        </div>
+
+        <div style="margin-top: 30px; border-top: 2px solid var(--blue-france); padding-top: 10px; display: flex; align-items: center;">
+            <div id="qrcode"></div>
+            <div style="margin-left: 20px; font-size: 10px;">
+                <strong>CONTRÔLE D'AUTHENTICITÉ :</strong><br>
+                Scannez pour vérifier la validité de l'article 440 du Code Civil (Mise sous tutelle) 
+                et le statut du recensement national des victimes.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        new QRCode(document.getElementById("qrcode"), {
+            text: "https://justicia-2026.github.io/recensement",
+            width: 80,
+            height: 80
+        });
+    </script>
+</body>
+</html>

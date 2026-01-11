@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribunal Souverain - Jugement Majoritaire - JUSTICIA 2026</title>
+    <link rel="stylesheet" href="../assets/css/gouv-style.css">
+    <style>
+        .tribunal-box {
+            background: var(--black);
+            color: white;
+            padding: 2rem;
+            border: 3px double var(--blue-france);
+            margin: 2rem 0;
+        }
+        .scrutin-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .mention-btn {
+            width: 100%;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border: 1px solid var(--grey-border);
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+        /* Échelle du Jugement Majoritaire */
+        .excellent { background: #1a5f1a; color: white; }
+        .tres-bien { background: #2e8b57; color: white; }
+        .bien { background: #9acd32; color: black; }
+        .passable { background: #ffd700; color: black; }
+        .insuffisant { background: #ff8c00; color: white; }
+        .a-rejeter { background: var(--red-marianne); color: white; }
+
+        .mention-btn:hover { filter: brightness(1.2); transform: scale(1.02); }
+        
+        .result-bar {
+            height: 20px;
+            background: var(--grey-alt);
+            margin-top: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="fr-header">
+        <div class="fr-logo">RÉPUBLIQUE FRANÇAISE<br><small>Souveraineté des 90%</small></div>
+        <nav class="fr-nav">
+            <ul>
+                <li><a href="../index.html">HUB</a></li>
+                <li><a href="../justice/pv-audition.html">PV ACTION</a></li>
+                <li><a href="./vote-majeur.html" style="color: var(--red-marianne);">VOTE TUTELLE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <section class="hero-section">
+            <h1>Jugement Majoritaire de l'Exécutif</h1>
+            <p class="lead">En vertu de l'<strong>Art. 440 du Code Civil</strong>, le peuple est appelé à se prononcer sur l'aptitude des mandataires du Faubourg Saint-Honoré à assurer la garantie des droits.</p>
+        </section>
+
+        <div class="tribunal-box">
+            <h2>QUESTIONNAIRE DE MISE SOUS TUTELLE</h2>
+            <p>Au regard des preuves d'intoxication (Art. 460) et d'escroquerie (Art. 313), quelle mention attribuez-vous à la gestion actuelle ?</p>
+
+            <div class="scrutin-grid">
+                <div class="voting-area">
+                    <button class="mention-btn excellent">Excellent</button>
+                    <button class="mention-btn tres-bien">Très Bien</button>
+                    <button class="mention-btn bien">Bien</button>
+                    <button class="mention-btn passable">Passable</button>
+                    <button class="mention-btn insuffisant">Insuffisant</button>
+                    <button class="mention-btn a-rejeter">À REJETER (TUTELLE IMMÉDIATE)</button>
+                </div>
+            </div>
+        </div>
+
+        <section id="fondement-legal">
+            <h2>Cadre Juridique du Verdict</h2>
+            <div class="law-card" style="border-left-color: var(--blue-france);">
+                <h3>Art. 440 Code Civil</h3>
+                <p>"La mesure de tutelle est ouverte lorsqu'une personne [...] est dans l'impossibilité de pourvoir seule à ses intérêts."</p>
+                <p><strong>Application :</strong> Constat d'inaptitude politique à protéger la santé et l'épargne de la Nation.</p>
+            </div>
+            <div class="law-card" style="border-left-color: var(--red-marianne);">
+                <h3>Art. 68 Constitution</h3>
+                <p>"Le Président de la République ne peut être destitué qu'en cas de manquement à ses devoirs manifestement incompatible avec l'exercice de son mandat."</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="fr-footer">
+        <div class="container">
+            <p><strong>JUSTICIA 2026</strong> | Tribunal de Grande Instance Citoyen</p>
+            <p>Scrutin certifié par le KERNEL CORE_SYSTEM_CVNU.js</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/justicia-core.js"></script>
+    <script>
+        // Logique de simulation de vote pour l'UX
+        document.querySelectorAll('.mention-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const mention = btn.innerText;
+                alert(`Votre mention "${mention}" a été enregistrée au registre des griefs. Envoi des données vers le Procureur via le PV d'Audition...`);
+                window.location.href = "../justice/pv-audition.html";
+            });
+        });
+    </script>
+</body>
+</html>

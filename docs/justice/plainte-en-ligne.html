@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUSTICIA_PV_COLLECTIF_2026</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <style>
+        @media print {
+            .no-print { display: none; }
+            body { padding: 0; margin: 0; background: white; }
+            .container { width: 100%; border: none !important; box-shadow: none !important; padding: 10mm; }
+        }
+
+        :root {
+            --blue-france: #000091;
+            --red-marianne: #e1000f;
+            --black: #000000;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: var(--black);
+            line-height: 1.25;
+            background: #f4f4f4;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: auto;
+            background: white;
+            border: 2px solid #000;
+            padding: 40px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+
+        .header-print {
+            border-bottom: 3px solid var(--blue-france);
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .marianne {
+            font-weight: bold;
+            text-transform: uppercase;
+            border-left: 4px solid var(--blue-france);
+            padding-left: 10px;
+            font-size: 14px;
+        }
+
+        h1 { font-size: 18px; color: var(--blue-france); margin: 0; text-transform: uppercase; text-align: right; }
+
+        .collective-banner {
+            background: var(--black);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .section-title {
+            background: var(--blue-france);
+            color: white;
+            padding: 8px 12px;
+            font-size: 14px;
+            margin-top: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .pv-box {
+            background: #fdfdfd;
+            border: 2px dashed var(--black);
+            padding: 20px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 12px;
+            margin: 20px 0;
+            white-space: pre-wrap;
+            line-height: 1.4;
+        }
+
+        .legal-references {
+            font-size: 11px;
+            background: #eee;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 15px 0;
+        }
+
+        .qr-action-zone {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 3px solid var(--red-marianne);
+            padding: 20px;
+            margin-top: 25px;
+            background: #fff1f0;
+        }
+
+        #qrcode {
+            padding: 8px;
+            background: white;
+            border: 1px solid #000;
+        }
+
+        .url-call {
+            font-weight: bold;
+            font-size: 13px;
+            color: var(--blue-france);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="no-print" style="position: fixed; top: 0; left: 0; width: 100%; background: var(--blue-france); color: white; padding: 15px; text-align: center; z-index: 9999; box-shadow: 0 2px 10px rgba(0,0,0,0.5);">
+        <strong>FRONT COMMUN JUSTICIA 2026</strong> — 
+        <button onclick="window.print()" style="padding: 10px 25px; cursor: pointer; background: var(--red-marianne); color: white; border: none; font-weight: bold; margin-left: 20px; border-radius: 4px;">
+            🖨️ IMPRIMER ET DISTRIBUER LE PDF (A4)
+        </button>
+    </div>
+
+    <div class="container" style="margin-top: 70px;">
+        <div class="header-print">
+            <div class="marianne">République<br>Française</div>
+            <h1>Procès-Verbal d'Audition Collective</h1>
+        </div>
+
+        <div class="collective-banner">
+            Nous sommes les victimes de la croissance politique
+        </div>
+
+        <p style="font-size: 12px; font-style: italic;">Document de composition pénale citoyenne visant les agents et fonctionnaires de l'État (Art. 41-1, 53 et 78 du Code de Procédure Pénale).</p>
+        
+        <div class="section-title">I. Dénonciation des Crimes et Délits Systémiques</div>
+        <div class="legal-references">
+            <strong>• Atteinte au consentement (Art. 226 CP) :</strong> Surveillance de masse non consentie via les réseaux et expérimentations bioclimatiques.<br>
+            <strong>• Escroquerie à la finance (Art. 313 CP) :</strong> Blanchiment de la TVA, planche à billets d'Europa et rétention des revenus de subsistance au 10/01/2026.<br>
+            <strong>• Crime contre la Nation (Livre IV CP) :</strong> Empoisonnement alimentaire (pesticides) et trahison des Accords de Paris par expérimentation sur les précaires.<br>
+            <strong>• Article 68 Constitution :</strong> Demande de destitution pour manquement aux devoirs de la charge présidentielle (mépris des 2M signataires).
+        </div>
+
+        <div class="section-title">II. Texte du PV à déposer sur masecurite.interieur.gouv.fr</div>
+        <div class="pv-box" id="pv-text">OBJET : PLAINTE PÉNALE COLLECTIVE - VICTIMES DE LA CROISSANCE POLITIQUE
+
+NOUS, citoyens français, travailleurs pauvres et précaires sous le seuil de pauvreté (1193€), portons plainte ce jour contre l'exécutif pour :
+
+1. ESCROQUERIE SYSTEMIQUE (Art. 313-1 CP) : Manipulation de la valeur monétaire et rétention indue de nos droits Caf certifiés au 10/01/2026 (RSA 568,94€ / QF 428€).
+2. SURVEILLANCE SANS CONSENTEMENT (Art. 226 CP) : Captation de données et surveillance de masse par l'État.
+3. INGERENCE BIOCLIMATIQUE : Usage abusif des Accords de Paris pour imposer des expérimentations toxiques (pesticides) sans consentement des populations testées.
+4. TRAHISON DEMOCRATIQUE : Usage abusif du 49.3 et mépris de la pétition des 2 millions de citoyens (Loi Duplomb).
+
+NOUS demandons, via l'Art. 41 du CPP, l'audition des auteurs de ces faits résidant à l'Élysée.</div>
+
+        <div class="qr-action-zone">
+            <div style="flex: 1; padding-right: 25px;">
+                <p><strong>REJOIGNEZ LE NOUS :</strong></p>
+                <p style="font-size: 12px;">Scannez le QR Code pour accéder à la plateforme, télécharger les preuves de l'UDAF/CNAF et multiplier l'impact viral.</p>
+                <p class="url-call">masecurite.interieur.gouv.fr</p>
+            </div>
+            <div id="qrcode"></div>
+        </div>
+
+        <footer style="margin-top: 30px; font-size: 10px; text-align: center; color: #666; border-top: 1px solid #ddd; padding-top: 15px;">
+            JUSTICIA 2026 — Plateforme Citoyenne. Distribution autorisée et encouragée au titre du droit d'alerte. NOUS SOMMES LES 90%.
+        </footer>
+    </div>
+
+    <script>
+        // Génère le QR Code (Remplacez l'URL par l'URL finale de votre page justicia.html)
+        new QRCode(document.getElementById("qrcode"), {
+            text: "https://justicia-gouv-fr.github.io/recensement", 
+            width: 120,
+            height: 120,
+            colorDark : "#000000",
+            colorLight : "#ffffff"
+        });
+    </script>
+</body>
+</html>
